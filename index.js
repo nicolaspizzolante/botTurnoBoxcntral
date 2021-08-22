@@ -10,7 +10,7 @@ require('dotenv').config();
     const minuteCron = new CronJob('* * * * *', async () => {
         let date = new Date();
 
-        if (date.getHours() == 20 && date.getMinutes() == 54) {
+        if (date.getHours() == 0 && date.getMinutes() == 0) {
 
             let browser = await puppeteer.launch({
                 headless: false 
